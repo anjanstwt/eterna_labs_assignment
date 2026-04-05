@@ -4,3 +4,18 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
+[dev-dependencies]
+criterion = "0.8.2"
+
+[[bench]]
+name = "varying_thread_bench"
+harness = false
+
+[[bench]]
+name = "varying_queue_size_bench"
+harness = false
+
+[[bench]]
+name = "asymmetric_workload_bench"
+harness = false
